@@ -1,61 +1,138 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
-  font-size: 100%;
-  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 100%;
+	font-family: "Montserrat", "Open Sans", "Maven Pro", Helvetica, Arial, sans-serif;
+	width: 100%;
 }
 
 p {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: lighter;
-  color: #2d2d2d;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-weight: lighter;
+	color: #2d2d2d;
 }
 
-/* TODO: size images manually so this is not necessary */
+/* TODO: size images manually so  this is not necessary */
 img {
-  max-height: 20rem;
+	max-height: 20rem;
 }
 
 /***************** NAV *****************/
 
+nav {
+	background-color: #E8885B;
+}
+
+.nav-menu {
+	max-width: 1000px;
+	margin: 0 auto;
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.menu {
+	max-width: 250px;
+	min-width: 250px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 1%;
+}
+
+.menu-font {
+	color: white;
+	font-size: 22px;
+}
+
+.cart {
+	color: white;
+}
+
 nav a:hover {
-  text-decoration: underline;
+	text-decoration: none;
 }
 
 /**************** HERO *****************/
 
+.brand {
+	display: flex;
+}
+
 header img {
-  max-height: 6rem;
+	max-height: 6rem;
+	margin:1rem;
 }
 
 h1 .logo-w {
-  font-size: 3.5rem;
+	font-size: 3.5rem;
 }
 
 /**************** ASIDE ****************/
 
 input[type="submit"] {
-  padding: .25rem;
-  background-color: #3D7FCF;
-  border: 1px solid #3D7FCF;
-  border-radius: 5px;
-  font-size: .75rem;
-  color: white;
+	padding: .25rem;
+	background-color: #3D7FCF;
+	border: 1px solid #3D7FCF;
+	border-radius: 5px;
+	font-size: .75rem;
+	color: white;
 }
 
 /*********** PRODUCTS SECTION ***********/
 
 section {
-  padding: 0 .75rem;
+	padding: 0 .75rem;
+}
+
+.item-container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: 0 auto;
 }
 
 h2 {
-  padding-top: 1.5rem;
-  font-size: 2rem;
-  text-align: center;
-  color: #2d2d2d;
+	padding-top: 1.5rem;
+	margin-bottom:1rem;
+	font-size: 2rem;
+	font-weight:bold;
+	text-align: center;
+	color: #2d2d2d;	
 }
 
 h3 {
-  font-size: 1.2rem;
-  text-align: center;
-  color: #2d2d2d;
+	font-size: 1.2rem;
+	text-align: center;
+	color: #2d2d2d;
+}
+
+.item {
+	position:relative;
+	text-align: center;
+	padding: 1.5rem 1rem 1.5rem 1rem;
+	border: 1px solid #F5F2E9;
+	margin: 0 0.1rem 0.1em 0.1em;
+}
+
+.item-img {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	min-height: 340px;
+	overflow: hidden;
+}
+
+.item-description {
+	margin:0 0 1vw 0;
+}
+
+.item-cost {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
