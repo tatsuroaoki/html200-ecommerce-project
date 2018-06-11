@@ -37,14 +37,16 @@ nav {
 .nav-menu {
 	max-width: 1000px;
 	margin: 0 auto;
+	/*
 	display:flex;
 	flex-wrap: wrap;
+	*/
 	align-items: center; 
 }
 
 .menu {
 	max-width: 250px;
-	min-width: 250px;
+	/*	min-width: 250px;*/
 	margin: 0 auto;
 	text-align: center;
 	padding: 1%;
@@ -147,26 +149,16 @@ input[type="submit"] {
 	margin: 0;
 	opacity: 1;
 	color: #2D394C;
-	font-size: 3rem;
+	font-size: 2.4rem;
 	font-family: "Handlee", sans-serif;
 }
 
 .item-container {
 	display: flex;
 	justify-content: center;
-	margin: 0 auto;	
+/*	margin: 0 auto;*/
+	margin: 1rem 1rem;
 }
-
-/*
-h2 {
-padding-top: 1.5rem;
-margin-bottom:1rem;
-font-size: 2rem;
-font-weight:bold;
-text-align: center;
-color: #2d2d2d;	
-}
-*/
 
 h3 {
 	font-size: 1.2rem;
@@ -179,16 +171,26 @@ h3 {
 	text-align: center;
 	padding: 1.5rem 1rem 1.5rem 1rem;
 	border: 1px solid #F5F2E9;
-	margin: 0 0.1rem 0.1em 0.1em;
-	background-color: #FFFFFF
 }
 
 .item-img {
 	display: flex;
 	justify-content: center;
+/*
 	width: 100%;
-	min-height: 340px;
-	overflow: hidden;
+	min-height: 1200px;
+*/
+	/*	overflow: hidden;*/
+}
+
+.item h3 {
+/*	width: 100%;*/
+}
+
+.item-img img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 0.5rem;
 }
 
 .item-description {
@@ -202,4 +204,26 @@ h3 {
 	left: 0;
 	right: 0;
 	margin: auto;
+}
+
+@media screen and (min-width: 720px) {
+	.nav-menu {
+		display: flex;
+	}
+}
+
+/* media queries */
+
+@media screen and (max-width: 720px) {
+	.nav-menu {
+		background-color: #D3FDFF;
+	}
+
+	.menu-font {
+		color: black;
+	}
+
+	.cart {
+		color: black;
+	}
 }
